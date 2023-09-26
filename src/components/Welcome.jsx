@@ -1,13 +1,18 @@
 import { Header } from "./Header";
+
+import { Mikola } from "./Mikola";
+
 import playImage from "../assets/play.svg";
 import welcome from "../assets/welcome.svg";
 import wawe from "../assets/wawe.svg";
+import play from "../assets/play.svg";
 
 export const Welcome = () => {
   return (
     <>
       <div className="welcome">
         <Header />
+        
         <div className="container welcome__container">
           <div className="welcome__content">
             <div className="welcome__info">
@@ -22,6 +27,7 @@ export const Welcome = () => {
               <div className="welcome__btn">
                 <a className="btn _primary" href="/">
                   Join for free
+                  
                 </a>
                 <a href="/" className="btn-watch">
                   <img src={playImage} alt="Play" />
@@ -36,6 +42,7 @@ export const Welcome = () => {
         </div>
         <img className="welcome__wawe" src={wawe} alt="wawe" />
       </div>
+      <Mikola />
     </>
   );
 };
